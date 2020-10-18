@@ -3,16 +3,23 @@
 /* ///////////main_ideadコンテンツ/////////// */
 
 .idead_text_area {
-  margin: 0 auto;
+  padding: 0 20px;
+  margin: 20px auto;
   width: 684px;
 
   background-color: #d3d3d3;
   color: #2f4f4f;
   border-radius: 10px;
 }
-.idead_text_area h3, .idead_text_area p {
-  margin-left: 20px;
+.idead_text_area h3 {
   font-size: 1.4em;
+  text-decoration: underline;
+}
+
+.idead_text_area p {
+  font-weight: bold;
+  line-height: 35px;
+  font-size: 1.0em;
 }
 
 .idead_input_area {

@@ -114,11 +114,21 @@ session_start();
         <div id="main_minutes">
           <h2>MINUTES</h2>
           <div id="minutes_thread"></div>
-          <!-- <p>aaaaaaaa</p> -->
           <form class="minutes_input_area" action="../php/minutes.php" method="post">
             <textarea name="minu" rows="12" cols="80" placeholder="議事録を記入"></textarea>
             <input type="submit" name="" value="送信" id="submit_minutes">
           </form>
+
+          <div class="minutes_text_area">
+            <!-- このクラスの中に書けば議事録のスタイルに -->
+            <h3>2020/10/18</h3>
+            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+          </div>
+          <div class="minutes_text_area">
+            <!-- このクラスの中に書けば議事録のスタイルに -->
+            <h3>2020/10/18</h3>
+            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+          </div>
         </div>
 
         <div id="main_idead">
@@ -128,6 +138,17 @@ session_start();
             <textarea name="idea" rows="12" cols="80" placeholder="アイデアを記入"></textarea>
             <input type="submit" name="" value="送信" id="submit_idead">
           </form>
+          
+          <div class="idead_text_area">
+            <!-- このクラスの中に書けばアイデアのスタイルに -->
+            <h3>2020/10/18</h3>
+            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+          </div>
+          <div class="idead_text_area">
+            <!-- このクラスの中に書けばアイデアのスタイルに -->
+            <h3>2020/10/18</h3>
+            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+          </div>
         </div>
 
         <div id="main_document">
@@ -145,6 +166,17 @@ session_start();
               </dl>
               <input type="submit" value="アップロード">
             </form>
+
+            <div class="file_area">
+              <!-- このクラスの中に書けばドキュメントのスタイルに -->
+              <h3><i>&#x21E3;</i>test.txt</h3>
+              <p>コメントコメントコメントコメント</p>
+            </div>
+            <div class="file_area">
+              <!-- このクラスの中に書けばドキュメントのスタイルに -->
+              <h3><i>&#x21E3;</i>test.txt</h3>
+              <p>コメントコメントコメントコメント</p>
+            </div>
           </div>
 
           <div id="url_document">
@@ -158,6 +190,17 @@ session_start();
               </dl>
               <input type="submit" name="" value="送信" id="submit_url">
             </form>
+
+            <div class="url_area">
+              <!-- このクラスの中に書けばドキュメントのスタイルに -->
+              <h3><i>&#x21E2;</i><a href="https://www.colordic.org/">https://www.colordic.org/</a></h3>
+              <p>コメントコメントコメントコメントコメント</p>
+            </div>
+            <div class="url_area">
+              <!-- このクラスの中に書けばドキュメントのスタイルに -->
+              <h3><i>&#x21E2;</i><a href="https://www.colordic.org/">https://www.colordic.org/</a></h3>
+              <p>コメントコメントコメントコメントコメント</p>
+            </div>
           </div>
         </div>
 

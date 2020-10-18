@@ -13,6 +13,7 @@
   transition: all 0.4s;
 }
 .up_area {
+  margin: 60px 0;
   text-align: center;
 }
   /* ///////////file_document/////////// */
@@ -30,16 +31,40 @@
     clear: both;
   }
   .file_area {
-    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 20px;
+    margin: 20px auto;
     width: 684px;
 
     background-color: #d3d3d3;
     color: #2f4f4f;
     border-radius: 10px;
   }
-  .file_area h3, .file_area p {
-    margin-left: 20px;
+  .file_area h3 {
+    margin: 15px;
+    line-height:40px;
+    float: left;
+    text-decoration: underline;
     font-size: 1.4em;
+    color: #6a5acd;
+  }
+  .file_area h3:hover {
+    transition: all 0.4s;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .file_area h3 i {
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+  .file_area p  {
+    line-height: 40px;
+    float: left;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 1.0em;
   }
   #file_document dt {
     margin-right: 20px;
@@ -61,6 +86,43 @@
   #submit_url {
     margin-top: 30px;
     width: 6em;
+  }
+  .url_area {
+    overflow: hidden;
+    padding: 0 20px;
+    margin: 20px auto;
+    width: 684px;
+
+    background-color: #d3d3d3;
+    color: #2f4f4f;
+    border-radius: 10px;
+  }
+  .url_area h3 {
+    margin: 15px;
+    line-height:40px;
+    font-size: 1.2em;
+    color: #6a5acd;
+  }
+  .url_area h3:hover {
+    transition: all 0.4s;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .url_area h3 i {
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .url_area h3 a {
+    text-decoration: underline;
+    color: #6a5acd;
+  }
+  .url_area p {
+    margin-left: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 1.0em;
   }
   /* ///////////url_document/////////// */
 /* ///////////main_documentコンテンツ/////////// */
