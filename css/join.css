@@ -1,0 +1,42 @@
+/* join css */
+
+/* ///////////join_documentコンテンツ/////////// */
+
+#main_join {
+  width: 724px;
+  margin: 0 auto;
+}
+#main_join p {
+  margin-left: 20px;
+}
+#main_join ul {
+  margin: 30px 0;
+  list-style: none;
+}
+#main_join li {
+  width: 16em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: solid 1px #191970;
+}
+#main_join li:hover {
+  color: #4682b4;
+  border-bottom: solid 1px #4682b4;
+  transition: all 0.4s;
+}
+#main_join dl {
+  margin-left: 20px;
+}
+#main_join dl dd {
+  margin-left: 20px;
+}
+#submit_join {
+  margin: 0 20px;
+  width: 6em;
+}
+
+/* ///////////join_documentコンテンツ/////////// */
+
+/* The creator of this code is Kojima Naoyuki */

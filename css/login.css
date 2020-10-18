@@ -1,0 +1,84 @@
+/*/////// ログイン ///////*/
+.login{
+  padding: 20px;
+  margin: 120px auto;
+  width: 712px;
+  text-align: center;
+  background-color:#666666;
+  border-radius: 15px;
+}
+
+.login h1{
+  margin: 0 0 50px 0;
+  font-size: 30px;
+}
+.input{
+  width: 18em;
+  height: 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.button{
+  width: 12em;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#btn_login, #btn_login2 {
+  margin: 60px 30px 0 0;
+}
+/*/////// ログイン ///////*/
+
+/*///// アカウント作成 /////*/
+.create_acc{
+  padding: 20px;
+  margin: 120px auto;
+  width: 712px;
+  text-align: center;
+  background-color:#666666;
+  border-radius: 15px;
+}
+.create_acc h1{
+  margin: 0 0 50px 0;
+  font-size: 30px;
+}
+
+#btn_create, #btn_create2 {
+  margin: 60px 0 0 30px;
+}
+/*///// アカウント作成 /////*/
+
+/*///// error /////*/
+
+.error {
+  padding: 20px;
+  margin: 120px auto;
+  width: 712px;
+  text-align: center;
+  background-color:#666666;
+  border-radius: 15px;
+}
+
+.error h1 {
+  margin: 0 0 50px 0;
+  font-size: 30px;
+}
+
+.error p {
+  font-weight: bold;
+}
+
+.back {
+  width: 6em;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+/*///// error /////*/
+
+/* The creator of this code is Itou Yuuma and Kojima Naoyuki */

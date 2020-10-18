@@ -1,0 +1,38 @@
+/* settings css */
+
+/* ///////////settingsコンテンツ/////////// */
+#main_settings {
+  width: 724px;
+  margin: 0 auto;
+}
+.color_change_box {
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+
+  border: solid 1px #d3d3d3;
+}
+.color_change_box_current {
+  background-color: #d3d3d3;
+  color: #696969;
+}
+.settings_text_box {
+  margin-right: 40px;
+  padding: 10px;
+}
+#main_settings dt {
+  width: 16em;
+  clear: both;
+}
+#main_settings dl {
+  overflow: hidden;
+}
+#submit_settings {
+  margin-left: 560px;
+  width: 6em;
+}
+/* ///////////settingsコンテンツ/////////// */
+
+/* The creator of this code is Kojima Naoyuki */

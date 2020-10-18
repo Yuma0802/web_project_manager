@@ -1,0 +1,34 @@
+/* idead css */
+
+/* ///////////main_ideadコンテンツ/////////// */
+
+.idead_text_area {
+  margin: 0 auto;
+  width: 684px;
+
+  background-color: #d3d3d3;
+  color: #2f4f4f;
+  border-radius: 10px;
+}
+.idead_text_area h3, .idead_text_area p {
+  margin-left: 20px;
+  font-size: 1.4em;
+}
+
+.idead_input_area {
+  margin: 0 auto;
+  width: 684px;
+  text-align: center;
+}
+.idead_input_area textarea {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.idead_input_area #submit_idead {
+  width: 84px;
+  margin: 10px 0 20px 500px;
+}
+/* ///////////main_ideadコンテンツ/////////// */
+
+/* The creator of this code is Kojima Naoyuki */

@@ -1,0 +1,3 @@
+<?php 
+$now = new DateTime();
+?>

@@ -1,0 +1,35 @@
+/* minutes css */
+
+/* ///////////main_minutesコンテンツ/////////// */
+
+.minutes_text_area {
+  margin: 0 auto;
+  width: 684px;
+
+  background-color: #d3d3d3;
+  color: #2f4f4f;
+  border-radius: 10px;
+}
+.minutes_text_area h3, .minutes_text_area p {
+  margin-left: 20px;
+  font-size: 1.4em;
+}
+
+.minutes_input_area {
+  margin: 0 auto;
+  width: 684px;
+  text-align: center;
+}
+.minutes_input_area textarea {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.minutes_input_area #submit_minutes {
+  width: 84px;
+  margin: 10px 0 20px 500px;
+}
+
+/* ///////////main_minutesコンテンツ/////////// */
+
+/* The creator of this code is Kojima Naoyuki */

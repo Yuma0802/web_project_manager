@@ -1,0 +1,68 @@
+/* document css */
+
+/* ///////////main_documentコンテンツ/////////// */
+#file_btn, #url_btn {
+  margin-bottom: 40px;
+  padding: 10px;
+  margin-left: 40px;
+  float: left;
+  cursor: pointer;
+}
+#file_btn:hover, #url_btn:hover {
+  color: #4682b4;
+  transition: all 0.4s;
+}
+.up_area {
+  text-align: center;
+}
+  /* ///////////file_document/////////// */
+  .current_file_url {
+    background-color: #d3d3d3;
+    color: #696969;
+    border-radius: 10px;
+  }
+
+
+  #file_document {
+    display: block;
+    width: 724px;
+    margin: 20px auto;
+    clear: both;
+  }
+  .file_area {
+    margin: 0 auto;
+    width: 684px;
+
+    background-color: #d3d3d3;
+    color: #2f4f4f;
+    border-radius: 10px;
+  }
+  .file_area h3, .file_area p {
+    margin-left: 20px;
+    font-size: 1.4em;
+  }
+  #file_document dt {
+    margin-right: 20px;
+  }
+  /* ///////////file_document/////////// */
+  /* ///////////url_document/////////// */
+  #url_document {
+    display: block;
+    width: 724px;
+    margin: 20px auto;
+    clear: both;
+  }
+  #url_document dt, #url_document dd {
+    margin-left: 20px;
+  }
+  #url_document dt {
+    margin-left: 40px;
+  }
+  #submit_url {
+    margin-top: 30px;
+    width: 6em;
+  }
+  /* ///////////url_document/////////// */
+/* ///////////main_documentコンテンツ/////////// */
+
+/* The creator of this code is Kojima Naoyuki */

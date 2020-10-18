@@ -1,0 +1,66 @@
+/* home css */
+
+/* ///////////main_homeコンテンツ/////////// */
+
+.day_big_box {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 250px;
+  float: left;
+
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  color: #696969;
+}
+.day_big_box h3 {
+  margin: 0;
+  text-align: center;
+  line-height: 250px;
+  font-size: 45px;
+}
+
+.todo_box {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 250px;
+  float: left;
+
+  background-color: #d3d3d3;
+  color: #696969;
+  border-radius: 10px;
+}
+.todo_box h3 {
+  margin: 10px 0 0 20px;
+}
+.todo_box ul {
+  margin-left: 20px;
+}
+
+.day_box_wrapper {
+  width: 724px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.day_box_wrapper h3 {
+  text-align: center;
+}
+.day_box {
+  width: 103px;
+  height: 103px;
+  float: left;
+  box-sizing: border-box;
+
+  background-color: #d3d3d3;
+  border: solid 1px #696969;
+  border-radius: 10px;
+}
+.day_box:hover {
+  background-color: #4682b4;
+  transition: all 0.4s;
+}
+
+/* ///////////main_homeコンテンツ/////////// */
+
+/* The creator of this code is Kojima Naoyuki */
