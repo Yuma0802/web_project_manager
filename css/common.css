@@ -15,6 +15,14 @@ dt,dd {
   margin: 20px;
 }
 
+.name {
+  clear: both;
+  font-weight: normal;
+  line-height: 25px;
+  color: #191970;
+  text-align: right;
+}
+
 /* ///////////ヘッダー/////////// */
 
 header {
