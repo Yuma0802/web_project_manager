@@ -14,7 +14,7 @@ if(isset($_SESSION['accunt'])){
   $stt->bindValue(':day',$now->format('y-m-d'));
   $stt->bindValue(':name',$_SESSION['accunt']['ID']);
   $stt->bindValue(':url',$_POST['url']);
-  $stt->bindValue(':explanation',$_POST['exp']);
+  $stt->bindValue(':explanation',nl2br($_POST['exp']));
   
   $stt->execute();
   header('Location:http://localhost/web_project_manager/html/main.php');

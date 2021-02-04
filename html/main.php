@@ -1,5 +1,6 @@
 <?php 
 require_once '../php/common.php';
+require_once '../php/calender.php';
 session_start();
 
 ?>
@@ -71,11 +72,18 @@ session_start();
           <h2>CALENDAR</h2>
           <div class="day_box_wrapper">
             <h3><?php print $now->format('y/m/d'); ?></h3>
+            <?php
+                foreach ($weeks as $week) {
+                    echo $week;
+                }
+            ?>
+
+
+            <!-- <div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div>
             <div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div>
             <div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div>
             <div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div>
-            <div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div>
-            <div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div>
+            <div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div><div class="day_box"></div> -->
           </div>
           <form class="text_in" action="" method="post">
             <h3>編集する</h3>
@@ -120,17 +128,33 @@ session_start();
           </form>
 
           <div class="minutes_text_area">
+          
             <!-- このクラスの中に書けば議事録のスタイルに -->
-            <h3>2020/10/18</h3>
+            
+           <?php 
+           
+           $db = getDb();
+            foreach ($db->query('select * from minutes') as $rowMinutes){
+
+             echo '<h3>', $rowMinutes['day'], '</h3>';
+             echo '<p>',$rowMinutes['contents'],'</p>';
+             echo '<h4 class="name">',$rowMinutes['name'],'</h4>';
+            }
+           
+           ?>
+            <!-- <h3>2020/10/18</h3>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-            <h4 class="name">名前名前名前</h4>
+            <h4 class="name">名前名前名前</h4> -->
           </div>
-          <div class="minutes_text_area">
+
+          <!-- <div class="minutes_text_area"> -->
             <!-- このクラスの中に書けば議事録のスタイルに -->
-            <h3>2020/10/18</h3>
+            
+            <!-- <h3>2020/10/18</h3>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-            <h4 class="name">名前名前名前</h4>
-          </div>
+            <h4 class="name">名前名前名前</h4> -->
+            
+          <!-- </div> -->
         </div>
 
         <div id="main_idead">
@@ -143,16 +167,31 @@ session_start();
           
           <div class="idead_text_area">
             <!-- このクラスの中に書けばアイデアのスタイルに -->
+            <?php 
+           
+           $db = getDb();
+            foreach ($db->query('select * from idead') as $rowIdead){
+
+             echo '<h3>', $rowIdead['day'], '</h3>';
+             echo '<p>',$rowIdead['idea'],'</p>';
+             echo '<h4 class="name">',$rowIdead['name'],'</h4>';
+            }
+           
+           ?>
+
+            <!-- <h3>2020/10/18</h3>
+            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+            <h4 class="name">名前名前名前</h4> -->
+
+          </div>
+
+          <!-- <div class="idead_text_area">
+            このクラスの中に書けばアイデアのスタイルに
             <h3>2020/10/18</h3>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
             <h4 class="name">名前名前名前</h4>
-          </div>
-          <div class="idead_text_area">
-            <!-- このクラスの中に書けばアイデアのスタイルに -->
-            <h3>2020/10/18</h3>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-            <h4 class="name">名前名前名前</h4>
-          </div>
+          </div> -->
+
         </div>
 
         <div id="main_document">
@@ -173,16 +212,31 @@ session_start();
 
             <div class="file_area">
               <!-- このクラスの中に書けばドキュメントのスタイルに -->
+
+              <?php 
+              $db = getDb();
+              foreach ($db->query('select * from doc1') as $rowDoc1){
+
+              echo '<h3>', $rowDoc1['day'], '</h3>';
+              echo '<h3><i>&#x21E3;</i><a href="',$rowDoc1['file'],'">',$rowDoc1['file'],'</a></h3>';
+              echo '<p>',$rowDoc1['coment'],'</p>';
+              echo '<h4 class="name">',$rowDoc1['name'],'</h4>';
+              }
+            ?>
+
+              <!-- <h3><i>&#x21E3;</i>test.txt</h3>
+              <p>コメントコメントコメントコメント</p>
+              <h4 class="name">名前名前名前</h4> -->
+
+            </div>
+
+            <!-- <div class="file_area">
+              このクラスの中に書けばドキュメントのスタイルに
               <h3><i>&#x21E3;</i>test.txt</h3>
               <p>コメントコメントコメントコメント</p>
               <h4 class="name">名前名前名前</h4>
-            </div>
-            <div class="file_area">
-              <!-- このクラスの中に書けばドキュメントのスタイルに -->
-              <h3><i>&#x21E3;</i>test.txt</h3>
-              <p>コメントコメントコメントコメント</p>
-              <h4 class="name">名前名前名前</h4>
-            </div>
+            </div> -->
+
           </div>
 
           <div id="url_document">
@@ -199,16 +253,31 @@ session_start();
 
             <div class="url_area">
               <!-- このクラスの中に書けばドキュメントのスタイルに -->
+
+              <?php 
+              $db = getDb();
+              foreach ($db->query('select * from doc2') as $rowDoc2){
+
+              echo '<h3>', $rowDoc2['day'], '</h3>';
+              echo '<h3><i>&#x21E2;</i><a href="',$rowDoc2['url'],'">',$rowDoc2['url'],'</a></h3>';
+              echo '<p>',$rowDoc2['explanation'],'</p>';
+              echo '<h4 class="name">',$rowDoc2['name'],'</h4>';
+              }
+            ?>
+
+              <!-- <h3><i>&#x21E2;</i><a href="https://www.colordic.org/">https://www.colordic.org/</a></h3>
+              <p>コメントコメントコメントコメントコメント</p>
+              <h4 class="name">名前名前名前</h4> -->
+
+            </div>
+
+            <!-- <div class="url_area">
+              このクラスの中に書けばドキュメントのスタイルに
               <h3><i>&#x21E2;</i><a href="https://www.colordic.org/">https://www.colordic.org/</a></h3>
               <p>コメントコメントコメントコメントコメント</p>
               <h4 class="name">名前名前名前</h4>
-            </div>
-            <div class="url_area">
-              <!-- このクラスの中に書けばドキュメントのスタイルに -->
-              <h3><i>&#x21E2;</i><a href="https://www.colordic.org/">https://www.colordic.org/</a></h3>
-              <p>コメントコメントコメントコメントコメント</p>
-              <h4 class="name">名前名前名前</h4>
-            </div>
+            </div> -->
+
           </div>
         </div>
 

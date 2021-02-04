@@ -13,7 +13,7 @@ if(isset($_SESSION['accunt'])){
 
   $stt->bindValue(':day',$now->format('y-m-d'));
   $stt->bindValue(':name',$_SESSION['accunt']['ID']);
-  $stt->bindValue(':idea',$_POST['idea']);
+  $stt->bindValue(':idea',nl2br($_POST['idea']));
   
   $stt->execute();
   header('Location:http://localhost/web_project_manager/html/main.php');
