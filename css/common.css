@@ -230,4 +230,31 @@ footer h3 {
 }
 /* ///////////footer/////////// */
 
+/* ///////////ユーザー使用css/////////// */
+.colorRed {
+  color: red;
+}
+.colorBlue {
+  color: blue;
+}
+.colorBlack {
+  color: black;
+}
+
+.minutes_text_area h1 {
+  margin: 0;
+  font-size: 18px;
+}
+.minutes_text_area h1::before {
+  content: '[ ';
+}
+.minutes_text_area h1::after {
+  content: ' ]';
+}
+
+.underLine {
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* ///////////ユーザー使用css/////////// */
 /* The creator of this code is Kojima Naoyuki */

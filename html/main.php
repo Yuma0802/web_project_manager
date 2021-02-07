@@ -127,25 +127,25 @@ session_start();
             <input type="submit" name="" value="送信" id="submit_minutes">
           </form>
 
-          <div class="minutes_text_area">
-          
-            <!-- このクラスの中に書けば議事録のスタイルに -->
-            
-           <?php 
-           $countD = 10;
-           $db = getDb();
-            foreach ($db->query("select * from minutes ORDER BY num DESC LIMIT 0,".$countD.";") as $rowMinutes){
-
-             echo '<h3>', $rowMinutes['day'], '</h3>';
-             echo '<p>',$rowMinutes['contents'],'</p>';
-             echo '<h4 class="name">',$rowMinutes['name'],'</h4>';
-            }
-           
-           ?>
-            <!-- <h3>2020/10/18</h3>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-            <h4 class="name">名前名前名前</h4> -->
-          </div>
+          <?php 
+          $countD = 10;
+          $db = getDb();
+          foreach ($db->query("select * from minutes ORDER BY num DESC LIMIT 0,".$countD.";") as $rowMinutes) {
+            echo '<div class="minutes_text_area">';
+              echo '<h3>', $rowMinutes['day'], '</h3>';
+              echo '<p>',$rowMinutes['contents'],'</p>';
+              echo '<h4 class="name">',$rowMinutes['name'],'</h4>';
+            echo '</div>';
+          } 
+          ?>
+          <!-- <div class="minutes_text_area">
+            <h3>2020/10/18</h3>
+            <p>
+              <h1>aaaaaaaa</h1>
+              内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+            </p>
+            <h4 class="name">名前名前名前</h4>
+          </div> -->
 
           <!-- <div class="minutes_text_area"> -->
             <!-- このクラスの中に書けば議事録のスタイルに -->
