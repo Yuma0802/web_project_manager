@@ -173,34 +173,30 @@ session_start();
             <input type="submit" name="" value="送信" id="submit_idead">
           </form>
           
-          <div class="idead_text_area">
-            <!-- このクラスの中に書けばアイデアのスタイルに -->
-            <?php 
-           
-           $db = getDb();
-            foreach ($db->query('select * from idead ORDER BY num DESC') as $rowIdead){
+          <!-- このクラスの中に書けばアイデアのスタイルに -->
+          <?php 
+          $db = getDb();
+          foreach ($db->query('select * from idead ORDER BY num DESC') as $rowIdead){
+            echo '<div class="idead_text_area">';
+              echo '<h3>', $rowIdead['day'], '</h3>';
+              echo '<p>',$rowIdead['idea'],'</p>';
+              echo '<h4 class="name">',$rowIdead['name'],'</h4>';
+            echo '</div>';
+          }
+          ?>
 
-             echo '<h3>', $rowIdead['day'], '</h3>';
-             echo '<p>',$rowIdead['idea'],'</p>';
-             echo '<h4 class="name">',$rowIdead['name'],'</h4>';
-            }
-           
-           ?>
-
-            <!-- <h3>2020/10/18</h3>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-            <h4 class="name">名前名前名前</h4> -->
-
-          </div>
-
-          <!-- <div class="idead_text_area">
-            このクラスの中に書けばアイデアのスタイルに
-            <h3>2020/10/18</h3>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-            <h4 class="name">名前名前名前</h4>
-          </div> -->
+          <!-- <h3>2020/10/18</h3>
+          <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+          <h4 class="name">名前名前名前</h4> -->
 
         </div>
+
+        <!-- <div class="idead_text_area">
+          このクラスの中に書けばアイデアのスタイルに
+          <h3>2020/10/18</h3>
+          <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+          <h4 class="name">名前名前名前</h4>
+        </div> -->
 
         <div id="main_document">
           <h2>DOCUMENT</h2>
