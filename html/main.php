@@ -71,7 +71,9 @@ session_start();
           </div>
           <h2>CALENDAR</h2>
           <div class="day_box_wrapper">
-            <h3><?php print $now->format('y/m/d'); ?></h3>
+            <div class="day_month_bar">
+              <a href="#"> < </a> <h3 class="bar_month"><?php print $now->format('y/m/d'); ?></h3> <a href="#"> > </a>
+            </div>
             <?php
                 foreach ($weeks as $week) {
                     echo $week;
@@ -90,7 +92,13 @@ session_start();
             <dl>
               <dt>TODOリスト追加</dt><dd><input type="text" name="" value=""></dd>
             </dl>
-            <p class="inline">選択日</p>
+            <!-- <p class="inline">選択日</p> -->
+            <select name="dayList">
+              <option value="1">1日</option>
+              <option value="2">2日</option>
+              <option value="3">3日</option>
+              <option value="4">4日</option>
+            </select>
             <input type="submit" name="" value="登録">
           </form>
           <div class="margin"></div>

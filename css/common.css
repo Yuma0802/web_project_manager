@@ -8,6 +8,10 @@ dt,dd {
   margin: 0;
   float: left;
 }
+a {
+  margin: 0;
+  text-decoration: none;
+}
 .inline {
   display: inline;
 }

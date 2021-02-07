@@ -62,6 +62,22 @@
   transition: all 0.4s;
 }
 
+.day_month_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.day_month_bar h3 {
+  margin: 30px 20px;
+  margin-top: 10px;
+}
+.day_month_bar a {
+  margin: 30px 0;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #F3F3F3;
+}
 /* ///////////main_homeコンテンツ/////////// */
 
 /* The creator of this code is Kojima Naoyuki */
