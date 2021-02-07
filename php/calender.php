@@ -1,4 +1,5 @@
 <?php 
+
 $now = new DateTime();
 
 // 前月・次月リンクが押された場合は、GETパラメーターから年月を取得
@@ -51,9 +52,9 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
 
     if ($today == $date) {
         // 今日の日付の場合は、class="today"をつける
-        $week .= '<div class="day_box">' . $day;
+        $week .= '<div class="day_box" id="'.$day.'">' . $day;
     } else {
-        $week .= '<div class="day_box">' . $day;
+        $week .= '<div class="day_box" id="'.$day.'">' . $day;
     }
     $week .= '</div>';
 
@@ -63,7 +64,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
       if ($day == $day_count) {
           // 月の最終日の場合、空セルを追加
           // 例）最終日が木曜日の場合、金・土曜日の空セルを追加
-          $week .= str_repeat('<div class="day_box"></div>', 6 - ($youbi % 7));
+          $week .= str_repeat('<div class="day_box" id="'.$day.'"></div>', 6 - ($youbi % 7));
       }
 
       // weeks配列にtrと$weekを追加する
@@ -75,5 +76,9 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     }
 
 }
+
+
+//日程調整機能
+
 
 ?>

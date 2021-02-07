@@ -40,3 +40,13 @@ create table doc2 (
 );
 -- url
 -- document
+
+--schedule
+use manager;
+create table schedule (
+  num int auto_increment primary key,
+  day date not null,
+  name varchar(200) not null,
+  time text not null
+);
+--schedule
