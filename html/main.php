@@ -132,9 +132,9 @@ session_start();
             <!-- このクラスの中に書けば議事録のスタイルに -->
             
            <?php 
-           
+           $countD = 10;
            $db = getDb();
-            foreach ($db->query('select * from minutes') as $rowMinutes){
+            foreach ($db->query("select * from minutes ORDER BY num DESC LIMIT 0,".$countD.";") as $rowMinutes){
 
              echo '<h3>', $rowMinutes['day'], '</h3>';
              echo '<p>',$rowMinutes['contents'],'</p>';
@@ -170,7 +170,7 @@ session_start();
             <?php 
            
            $db = getDb();
-            foreach ($db->query('select * from idead') as $rowIdead){
+            foreach ($db->query('select * from idead ORDER BY num DESC') as $rowIdead){
 
              echo '<h3>', $rowIdead['day'], '</h3>';
              echo '<p>',$rowIdead['idea'],'</p>';
@@ -215,7 +215,7 @@ session_start();
 
               <?php 
               $db = getDb();
-              foreach ($db->query('select * from doc1') as $rowDoc1){
+              foreach ($db->query('select * from doc1 ORDER BY num DESC') as $rowDoc1){
 
               echo '<h3>', $rowDoc1['day'], '</h3>';
               echo '<h3><i>&#x21E3;</i><a href="',$rowDoc1['file'],'">',$rowDoc1['file'],'</a></h3>';
@@ -256,7 +256,7 @@ session_start();
 
               <?php 
               $db = getDb();
-              foreach ($db->query('select * from doc2') as $rowDoc2){
+              foreach ($db->query('select * from doc2 ORDER BY num DESC') as $rowDoc2){
 
               echo '<h3>', $rowDoc2['day'], '</h3>';
               echo '<h3><i>&#x21E2;</i><a href="',$rowDoc2['url'],'">',$rowDoc2['url'],'</a></h3>';
