@@ -21,7 +21,7 @@ session_start();
     <!-- ヘッダー -->
     <header>
       <h1>Web Project Management</h1>
-      <h2>ようこそ～～～さん</h2>
+      <h2>ようこそ<?=$_SESSION['accunt']['ID'] ?>さん</h2>
       <h2 id="joinProject" class="joinProject">TJHS</h2>
     </header>
     <!-- ヘッダー -->

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/login.css">
   </head>
   <body>
+  <?php require_once '../php/common.php';?>
     <!-- ヘッダー -->
     <header>
       <h1>Web Project Management</h1>

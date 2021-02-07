@@ -1,6 +1,6 @@
 <?php 
-$pdo=new PDO('mysql:host=localhost;dbname=manager;charset=utf8', 
-'master', '0524');
+require_once '../php/common.php';
+$db = getDb();
 
 //アカウント作成処理
 session_start();
@@ -22,7 +22,7 @@ if (!empty($_POST)) {
     
    // IDの重複を検知 
     if (!isset($error)) {
-        $member = $pdo->prepare('SELECT COUNT(*) as cnt FROM accunt WHERE ID=?');
+        $member = $db->prepare('SELECT COUNT(*) as cnt FROM accunt WHERE ID=?');
         $member->execute(array(
             $_POST['newID']
         ));
@@ -51,7 +51,7 @@ if (!empty($_POST)) {
 
   //アカウントをデータベースに追加
     if(!isset($error)){
-      $sql = $pdo->prepare('insert into accunt values(null,?,?)');
+      $sql = $db->prepare('insert into accunt values(null,?,?)');
       $sql -> execute([htmlspecialchars($_POST['newID']),htmlspecialchars($_POST['newPassword_A'])]);
 
       $miss = 4;

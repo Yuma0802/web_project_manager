@@ -1,7 +1,6 @@
 <?php 
 $now = new DateTime();
 
-
 // 前月・次月リンクが押された場合は、GETパラメーターから年月を取得
 if (isset($_GET['ym'])) {
   $ym = $_GET['ym'];

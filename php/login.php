@@ -1,11 +1,11 @@
 <?php 
+require_once '../php/common.php';
 //ログイン処理
   session_start(); 
   unset($_SESSION['accunt']);
 
-$pdo=new PDO('mysql:host=localhost;dbname=manager;charset=utf8', 
-	'master', '0524');
-$sql=$pdo->prepare('select * from accunt where ID=? and password=?');
+$db = getDb();
+$sql=$db->prepare('select * from accunt where ID=? and password=?');
 $sql->execute([$_POST['id'], $_POST['password']]);
 
 foreach ($sql as $row) {
