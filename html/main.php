@@ -255,25 +255,17 @@ session_start();
               <input type="submit" name="" value="送信" id="submit_url">
             </form>
 
-            <div class="url_area">
-              <!-- このクラスの中に書けばドキュメントのスタイルに -->
-
               <?php 
               $db = getDb();
               foreach ($db->query('select * from doc2 ORDER BY num DESC') as $rowDoc2){
-
+              echo '<div class="url_area">';
               echo '<h3>', $rowDoc2['day'], '</h3>';
               echo '<h3><i>&#x21E2;</i><a href="',$rowDoc2['url'],'">',$rowDoc2['url'],'</a></h3>';
               echo '<p>',$rowDoc2['explanation'],'</p>';
               echo '<h4 class="name">',$rowDoc2['name'],'</h4>';
+              echo '</div>';
               }
             ?>
-
-              <!-- <h3><i>&#x21E2;</i><a href="https://www.colordic.org/">https://www.colordic.org/</a></h3>
-              <p>コメントコメントコメントコメントコメント</p>
-              <h4 class="name">名前名前名前</h4> -->
-
-            </div>
 
             <!-- <div class="url_area">
               このクラスの中に書けばドキュメントのスタイルに
