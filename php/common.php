@@ -12,4 +12,6 @@ function getDb(){
   return $db;
 }
 
+$homePath = "Location:http://localhost/web_project_manager/html/main.php";
+
 ?>

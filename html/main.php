@@ -72,9 +72,11 @@ session_start();
           <h2>CALENDAR</h2>
           <div class="day_box_wrapper">
             <div class="day_month_bar">
-              <a href="#"> < </a> <h3 class="bar_month"><?php print $now->format('y/m/d'); ?></h3> <a href="#"> > </a>
+              <a href="?ym=<?php echo $prev; ?>"> < </a> <h3 class="bar_month"><?= $html_title; ?></h3> <a href="?ym=<?php echo $next; ?>"> > </a>
             </div>
             <?php
+              
+              $weeks = makeCale($ym);
                 foreach ($weeks as $week) {
                     echo $week;
                 }
