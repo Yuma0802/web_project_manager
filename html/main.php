@@ -310,14 +310,16 @@ session_start();
     <script type="text/javascript" src="../js/obj.js"></script>
     <script type="text/javascript" src="../js/fn.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
-
+    <?php
+      $day_count = date('t', $timestamp);
+    ?>          
     <script>
       //phpと連携が必須なjsの記述
       (function() {
         console.log('phpと連携が必須なjsの記述');
         ///////////////////////////////////////////////////////
         //php → js変数受け渡し
-        const dayMax = 28;
+        const dayMax = <?php echo $day_count; ?>;
         ///////////////////////////////////////////////////////
 
         const createDaySelect = (dayMax) => {
