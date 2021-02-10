@@ -19,9 +19,9 @@
     sideIdMember.home.addEventListener('click', function() {
       changedisplay.changeOnOff(mainIdMember.home);
     }, false);
-    sideIdMember.join.addEventListener('click', function() {
-      changedisplay.changeOnOff(mainIdMember.join);
-    }, false);
+    // sideIdMember.join.addEventListener('click', function() {
+    //   changedisplay.changeOnOff(mainIdMember.join);
+    // }, false);
     sideIdMember.minutes.addEventListener('click', function() {
       changedisplay.changeOnOff(mainIdMember.minutes);
     },false);
@@ -31,9 +31,9 @@
     sideIdMember.document.addEventListener('click', function() {
       changedisplay.changeOnOff(mainIdMember.document);
     },false);
-    sideIdMember.settings.addEventListener('click', function() {
-      changedisplay.changeOnOff(mainIdMember.settings);
-    },false);
+    // sideIdMember.settings.addEventListener('click', function() {
+    //   changedisplay.changeOnOff(mainIdMember.settings);
+    // },false);
 
     mainIdMember.fileBtn.addEventListener('click', function() {
       changedisplay.changeOnOff(mainIdMember.fileDocument);
@@ -46,32 +46,32 @@
       mainIdMember.fileBtn.classList.remove('current_file_url');
     }, false);
 
-    mainIdMember.blackBtn.addEventListener('click', function() {
-      this.classList.toggle('color_change_box_current');
-      mainIdMember.whiteBtn.classList.remove('color_change_box_current');
-    }, false);
-    mainIdMember.whiteBtn.addEventListener('click', function() {
-      this.classList.toggle('color_change_box_current');
-      mainIdMember.blackBtn.classList.remove('color_change_box_current');
-    }, false);
+    // mainIdMember.blackBtn.addEventListener('click', function() {
+    //   this.classList.toggle('color_change_box_current');
+    //   mainIdMember.whiteBtn.classList.remove('color_change_box_current');
+    // }, false);
+    // mainIdMember.whiteBtn.addEventListener('click', function() {
+    //   this.classList.toggle('color_change_box_current');
+    //   mainIdMember.blackBtn.classList.remove('color_change_box_current');
+    // }, false);
 
     ////////////////////////////////////////////////////////////
 
-    otherIdMember.joinProject.addEventListener('click', function() {
-      this.classList.toggle('joinProjectClicked');
-      otherIdMember.msg.classList.toggle('msg_box');
-      createhtml.create(otherIdMember.msg, 'h3', 'あなたが参加できるプロジェクト');
-      createhtml.create(otherIdMember.msg, 'p', 'TJHS');
+    // otherIdMember.joinProject.addEventListener('click', function() {
+    //   this.classList.toggle('joinProjectClicked');
+    //   otherIdMember.msg.classList.toggle('msg_box');
+    //   createhtml.create(otherIdMember.msg, 'h3', 'あなたが参加できるプロジェクト');
+    //   createhtml.create(otherIdMember.msg, 'p', 'TJHS');
 
-      if((joinProjectClicked % 2) == 1) {
-        createhtml.delete(otherIdMember.msg);
-        createhtml.delete(otherIdMember.msg);
-        createhtml.delete(otherIdMember.msg);
-        createhtml.delete(otherIdMember.msg);
-      }
+    //   if((joinProjectClicked % 2) == 1) {
+    //     createhtml.delete(otherIdMember.msg);
+    //     createhtml.delete(otherIdMember.msg);
+    //     createhtml.delete(otherIdMember.msg);
+    //     createhtml.delete(otherIdMember.msg);
+    //   }
 
-      joinProjectClicked++;
-    }, false);
+    //   joinProjectClicked++;
+    // }, false);
 
     ////////////////////////////////////////////////////////////
   }, false);

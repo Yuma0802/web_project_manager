@@ -22,7 +22,7 @@ session_start();
     <header>
       <h1>Web Project Management</h1>
       <h2>ようこそ<?=$_SESSION['accunt']['ID'] ?>さん</h2>
-      <h2 id="joinProject" class="joinProject">TJHS</h2>
+      <!-- <h2 id="joinProject" class="joinProject">TJHS</h2> -->
     </header>
     <!-- ヘッダー -->
 
@@ -39,11 +39,11 @@ session_start();
       <aside>
         <ul>
           <li class="current side" id="btn_home">HOME</li>
-          <li class="side" id="btn_join">JOIN</li>
+          <!-- <li class="side" id="btn_join">JOIN</li> -->
           <li class="side" id="btn_minutes">MINUTES</li>
           <li class="side" id="btn_idead">IDEAD</li>
           <li class="side" id="btn_document">DOCUMENT</li>
-          <li class="side" id="btn_settings">SETTINGS</li>
+          <!-- <li class="side" id="btn_settings">SETTINGS</li> -->
         </ul>
       </aside>
       <!-- サイドバー -->
@@ -106,7 +106,7 @@ session_start();
           <div class="margin"></div>
         </div>
 
-        <div id="main_join">
+        <!-- <div id="main_join">
           <h2>JOIN</h2>
           <h3>招待を受けているプロジェクト</h3>
           <ul>
@@ -127,7 +127,7 @@ session_start();
             <input type="submit" name="" value="招待" id="submit_join">
           </form>
           <div class="margin"></div>
-        </div>
+        </div> -->
 
         <div id="main_minutes">
           <h2>MINUTES</h2>
@@ -279,7 +279,7 @@ session_start();
           </div>
         </div>
 
-        <div id="main_settings">
+        <!-- <div id="main_settings">
           <h2>SETTINGS</h2>
           <form action="" method="post">
             <dl>
@@ -293,7 +293,7 @@ session_start();
             <input type="submit" name="" value="設定" id="submit_settings">
           </form>
           <div class="margin"></div>
-        </div>
+        </div> -->
 
       </section>
       <!-- mainコンテンツ -->

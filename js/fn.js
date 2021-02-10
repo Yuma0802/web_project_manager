@@ -57,59 +57,59 @@ ChangeDisplay.prototype = {
     //displayがnoneならblockに違うならnoneに
     switch (tg) {
       case mainIdMember.home :
-        mainIdMember.join.style.display = 'none';
+        // mainIdMember.join.style.display = 'none';
         mainIdMember.minutes.style.display = 'none';
         mainIdMember.idead.style.display = 'none';
         mainIdMember.document.style.display = 'none';
-        mainIdMember.settings.style.display = 'none';
+        // mainIdMember.settings.style.display = 'none';
 
         otherIdMember.footer.style.display = 'block';
         break;
-      case mainIdMember.join :
-        mainIdMember.home.style.display = 'none';
-        mainIdMember.minutes.style.display = 'none';
-        mainIdMember.idead.style.display = 'none';
-        mainIdMember.document.style.display = 'none';
-        mainIdMember.settings.style.display = 'none';
+      // case mainIdMember.join :
+      //   mainIdMember.home.style.display = 'none';
+      //   mainIdMember.minutes.style.display = 'none';
+      //   mainIdMember.idead.style.display = 'none';
+      //   mainIdMember.document.style.display = 'none';
+      //   mainIdMember.settings.style.display = 'none';
 
-        otherIdMember.footer.style.display = 'none';
-        break;
+      //   otherIdMember.footer.style.display = 'none';
+      //   break;
       case mainIdMember.minutes :
         mainIdMember.home.style.display = 'none';
-        mainIdMember.join.style.display = 'none';
+        // mainIdMember.join.style.display = 'none';
         mainIdMember.idead.style.display = 'none';
         mainIdMember.document.style.display = 'none';
-        mainIdMember.settings.style.display = 'none';
+        // mainIdMember.settings.style.display = 'none';
 
         otherIdMember.footer.style.display = 'none';
         break;
       case mainIdMember.idead :
         mainIdMember.home.style.display = 'none';
-        mainIdMember.join.style.display = 'none';
+        // mainIdMember.join.style.display = 'none';
         mainIdMember.minutes.style.display = 'none';
         mainIdMember.document.style.display = 'none';
-        mainIdMember.settings.style.display = 'none';
+        // mainIdMember.settings.style.display = 'none';
 
         otherIdMember.footer.style.display = 'none';
         break;
       case mainIdMember.document :
         mainIdMember.home.style.display = 'none';
-        mainIdMember.join.style.display = 'none';
+        // mainIdMember.join.style.display = 'none';
         mainIdMember.minutes.style.display = 'none';
         mainIdMember.idead.style.display = 'none';
-        mainIdMember.settings.style.display = 'none';
+        // mainIdMember.settings.style.display = 'none';
 
         otherIdMember.footer.style.display = 'none';
         break;
-      case mainIdMember.settings :
-        mainIdMember.home.style.display = 'none';
-        mainIdMember.join.style.display = 'none';
-        mainIdMember.minutes.style.display = 'none';
-        mainIdMember.idead.style.display = 'none';
-        mainIdMember.document.style.display = 'none';
+      // case mainIdMember.settings :
+      //   mainIdMember.home.style.display = 'none';
+      //   mainIdMember.join.style.display = 'none';
+      //   mainIdMember.minutes.style.display = 'none';
+      //   mainIdMember.idead.style.display = 'none';
+      //   mainIdMember.document.style.display = 'none';
 
-        otherIdMember.footer.style.display = 'none';
-        break;
+      //   otherIdMember.footer.style.display = 'none';
+      //   break;
       case mainIdMember.fileDocument :
         mainIdMember.urlDocument.style.display = 'none';
         break;
@@ -123,11 +123,11 @@ ChangeDisplay.prototype = {
     }
   },
   init : function() {
-    mainIdMember.join.style.display = 'none';
+    // mainIdMember.join.style.display = 'none';
     mainIdMember.minutes.style.display = 'none';
     mainIdMember.idead.style.display = 'none';
     mainIdMember.document.style.display = 'none';
-    mainIdMember.settings.style.display = 'none';
+    // mainIdMember.settings.style.display = 'none';
 
     mainIdMember.urlDocument.style.display = 'none';
   }

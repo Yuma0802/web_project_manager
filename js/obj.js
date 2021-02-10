@@ -21,11 +21,11 @@ var indexIdMember = {
 
 var sideIdMember = {
   home : document.getElementById('btn_home'),
-  join : document.getElementById('btn_join'),
+  // join : document.getElementById('btn_join'),
   minutes : document.getElementById('btn_minutes'),
   idead : document.getElementById('btn_idead'),
-  document : document.getElementById('btn_document'),
-  settings : document.getElementById('btn_settings')
+  document : document.getElementById('btn_document')
+  // settings : document.getElementById('btn_settings')
 };
 
 var mainIdMember = {
