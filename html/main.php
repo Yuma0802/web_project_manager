@@ -95,7 +95,7 @@ session_start();
               <dt>TODOリスト追加</dt><dd><input type="text" name="" value=""></dd>
             </dl>
             <!-- <p class="inline">選択日</p> -->
-            <select name="dayList">
+            <select name="dayList" id="dayList">
               <option value="1">1日</option>
               <option value="2">2日</option>
               <option value="3">3日</option>
@@ -310,6 +310,30 @@ session_start();
     <script type="text/javascript" src="../js/obj.js"></script>
     <script type="text/javascript" src="../js/fn.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
+
+    <script>
+      //phpと連携が必須なjsの記述
+      (function() {
+        console.log('phpと連携が必須なjsの記述');
+        ///////////////////////////////////////////////////////
+        //php → js変数受け渡し
+        const dayMax = 28;
+        ///////////////////////////////////////////////////////
+
+        const createDaySelect = (dayMax) => {
+          //todoリストの日付指定のリストを作成
+          for(let i = 1; i < dayMax+1; i++) {
+            const tg = document.getElementById('dayList');
+            let option = document.createElement('option');
+            option.text = i + '日';
+            option.value = i;
+            tg.appendChild(option);
+          }
+        }
+        createDaySelect(dayMax);
+
+      }).call(this);
+    </script>
   </body>
 </html>
 
